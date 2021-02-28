@@ -1,17 +1,17 @@
 import React from 'react'
 import './nopermission.css'
 
-class noper extends React.Component{
-    constructor(props){
+class noper extends React.Component {
+    constructor(props) {
         super(props)
         this.backtoHome = this.backtoHome.bind(this)
     }
 
-    backtoHome(){
+    backtoHome() {
         this.props.history.push('/')
     }
-    render(){
-        return(
+    render() {
+        return (
             <div className="accessdenied-container">
                 <div className="accessdenied">
                     <h1>Page Not Found</h1>

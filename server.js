@@ -9,12 +9,13 @@ var cookieParser = require('cookie-parser')
 app.use(cookieParser())
 
 dotenv.config()
-mongoose.connect(process.env.DB_CONNECT,{useNewUrlParser:true,useUnifiedTopology:true}, ()=>{
+mongoose.connect(process.env.DB_CONNECT, { useNewUrlParser: true, useUnifiedTopology: true }, () => {
     console.log('connected to mongoose')
 })
 
 app.use(express.json())
-app.use('/user',loginRoutes)
-app.use('/auth',authRoutes)
-app.listen(PORT,()=>{console.log('Listening to port '+ PORT)
+app.use('/user', loginRoutes)
+app.use('/auth', authRoutes)
+app.listen(PORT, () => {
+    console.log('Listening to port ' + PORT)
 })

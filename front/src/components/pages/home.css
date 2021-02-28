@@ -1,251 +1,232 @@
-.all-container{
-    background-image: url('../../back.jpg');
-    min-height: 100vh;
-    background-position: fixed;
-    background-size :cover;
-    background-position-x: center;
-    background-position-y: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .all-container  .login-container{
-    width: 370px;
-    height: 600px;
-    background-color: rgba(0, 0, 0, 0.9);
-    position: relative;
-  
-  }
-  
-  .all-container .login-buttons{
-    background-color: black;
-    width: 100%;
-  }
-  
-  .all-container .login-buttons button{
-      height: 4rem;
-      width: 50%;
-      color: #526D89;
-      font-size: 1.25rem;
-      outline: none;
-      border: none;
-      cursor: pointer;
-      background-color: transparent;
-  }
-  
-  .all-container .signup-container{
-    width: 370px;
-    height: 600px;
-    background-color: rgba(0, 0, 0, 0.9);
-    position: relative;
-  }
-  
-  .all-container .login-info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 3rem;
-    font-size: 1rem;
-  }
-  
-  .all-container .input-info{
-    width: 16rem;
-    padding: .8rem 0;
-    padding-left: .5rem;
-    margin-left: 0;
-    margin-top: 1rem;
-    font-size: 1rem;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    border-bottom: 1px solid aquamarine;
-    color: white;
-  }
-  
-  .all-container .remember-container{
-    margin-top:1rem;
-    font-size: 15px;
-    width: 70%;
-    display: inline-flex;
-    position: relative;
-    cursor: pointer;
-  }
-  
-  
-  
-  
-  
-  
-  .all-container .remember-label{
-    display: block;
-    position: relative;
-    padding-left: 20px;
-    cursor: pointer;
-    font-size: 15px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    margin-left: 7px;
-    
-  }
-  
-  .all-container .remember-label input{
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  
-  .all-container .checkmark{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 13px;
-    width: 13px;
-    background-color: transparent;
-    outline: 1px solid white;
-  }
-  
-  .all-container .remember-label:hover input ~ .checkmark {
-    background-color: #ccc;
-  }
-  
-  .all-container .remember-label input:checked ~ .checkmark {
-    background-color: white;
-    outline: 1px solid white;
-  }
-  
-  .all-container .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  .all-container .remember-label input:checked ~ .checkmark:after {
-    display: block;
-  }
-  
-  .all-container .remember-label .checkmark:after {
-    left: 3.2px;
-    width: 3px;
-    height: 8px;
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-  
-  
-  
-  
-  
-  
-  
-  .all-container .remember-container span{
-    position:absolute;
-    right: 0;
-    color: white;
-    
-  }
-  
-  .all-container .submit-button{
-    margin-top: 3rem;
-    font-size: 1.25rem;
-    padding: 1rem 3rem;
-    background-color: #84A98E;
-    outline: none;
-    border: none;
-    cursor: pointer;
-  }
-  .all-container  .submit-button:active{
-    border: 1px solid black;
-  }
-  .all-container .error-message{
-    color: white;
-    justify-content: center;
-    display: flex;
-    width: 100%;
-    position: absolute;
-    margin-top: 1rem;
-    color: #fd5c63;
-  }
-  
-  .all-container .inf-con{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  
-  }
-  
-  .all-container .error-span{
-    color: white;
-    position: absolute;
-    font-size: 12px;
-    user-select: none;
-    color: #fd5c63;
-    bottom: -1.2rem;
-    align-self: center;
-  }
+.all-container {
+  background-image: url('../../back.jpg');
+  min-height: 100vh;
+  background-position: fixed;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.all-container .login-container {
+  width: 370px;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: relative;
+}
 
+.all-container .login-buttons {
+  background-color: black;
+  width: 100%;
+}
 
+.all-container .login-buttons button {
+  height: 4rem;
+  width: 50%;
+  color: #526D89;
+  font-size: 1.25rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
 
+.all-container .signup-container {
+  width: 370px;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: relative;
+}
 
-  .forgotpass-container{
-    background-image: url('../../back.jpg');
-    min-height: 100vh;
-    background-position: fixed;
-    background-size :cover;
-    background-position-x: center;
-    background-position-y: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.all-container .login-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  font-size: 1rem;
+}
 
-  .forgotpass-container  .inside-container{
-      border-radius: 5px;
-    width: 500px;
-    height: 200px;
-    background-color: rgba(0, 0, 0, 0.9);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-  }
+.all-container .input-info {
+  width: 16rem;
+  padding: .8rem 0;
+  padding-left: .5rem;
+  margin-left: 0;
+  margin-top: 1rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid aquamarine;
+  color: white;
+}
 
-  .forgotpass-container .forgotpassinf-con{
-      position: absolute;
-      top:3rem;
-  }
+.all-container .remember-container {
+  margin-top: 1rem;
+  font-size: 15px;
+  width: 70%;
+  display: inline-flex;
+  position: relative;
+  cursor: pointer;
+}
 
-  .forgotpass-container button{
-    position: absolute;
-    bottom: 0;
-    padding: .8rem 1.75rem;
-    background-color: rgba(0, 0, 0, 0.9);
-    color: white;
-    cursor: pointer;
-    outline: none;
-    border-radius: 5px;
-  }
+.all-container .remember-label {
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-left: 7px;
+}
 
-  .forgotpass-container h1{
-      color:white;
-      text-align: center;
-        top: 3rem;
-        position: absolute;
+.all-container .remember-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
 
-  }
+.all-container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 13px;
+  width: 13px;
+  background-color: transparent;
+  outline: 1px solid white;
+}
 
-  .forgotpass-container p{
-    color:white;
-    text-align: center;
-      top: 6rem;
-      position: absolute;
+.all-container .remember-label:hover input~.checkmark {
+  background-color: #ccc;
+}
 
+.all-container .remember-label input:checked~.checkmark {
+  background-color: white;
+  outline: 1px solid white;
+}
+
+.all-container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.all-container .remember-label input:checked~.checkmark:after {
+  display: block;
+}
+
+.all-container .remember-label .checkmark:after {
+  left: 3.2px;
+  width: 3px;
+  height: 8px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.all-container .remember-container span {
+  position: absolute;
+  right: 0;
+  color: white;
+}
+
+.all-container .submit-button {
+  margin-top: 3rem;
+  font-size: 1.25rem;
+  padding: 1rem 3rem;
+  background-color: #84A98E;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.all-container .submit-button:active {
+  border: 1px solid black;
+}
+
+.all-container .error-message {
+  color: white;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  position: absolute;
+  margin-top: 1rem;
+  color: #fd5c63;
+}
+
+.all-container .inf-con {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.all-container .error-span {
+  color: white;
+  position: absolute;
+  font-size: 12px;
+  user-select: none;
+  color: #fd5c63;
+  bottom: -1.2rem;
+  align-self: center;
+}
+
+.forgotpass-container {
+  background-image: url('../../back.jpg');
+  min-height: 100vh;
+  background-position: fixed;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forgotpass-container .inside-container {
+  border-radius: 5px;
+  width: 500px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.forgotpass-container .forgotpassinf-con {
+  position: absolute;
+  top: 3rem;
+}
+
+.forgotpass-container button {
+  position: absolute;
+  bottom: 0;
+  padding: .8rem 1.75rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+}
+
+.forgotpass-container h1 {
+  color: white;
+  text-align: center;
+  top: 3rem;
+  position: absolute;
+}
+
+.forgotpass-container p {
+  color: white;
+  text-align: center;
+  top: 6rem;
+  position: absolute;
 }

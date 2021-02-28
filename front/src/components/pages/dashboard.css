@@ -1,8 +1,8 @@
-.dashboard-container{
+.dashboard-container {
     background-image: url('../../back.jpg');
     min-height: 100vh;
     background-position: fixed;
-    background-size :cover;
+    background-size: cover;
     background-position-x: center;
     background-position-y: center;
     display: flex;
@@ -11,9 +11,9 @@
     background-color: black;
 }
 
-.dashboard-container .dashboard{
+.dashboard-container .dashboard {
     width: auto;
-    padding:2rem;
+    padding: 2rem;
     height: 500px;
     display: flex;
     align-items: center;
@@ -22,25 +22,25 @@
     position: relative;
     border-radius: 10px;
     text-align: center;
-
 }
 
-.dashboard-container h1{
+.dashboard-container h1 {
     color: burlywood;
     font-size: 3rem;
 }
-.dashboard-container h2{
-    color: burlywood;
 
+.dashboard-container h2 {
+    color: burlywood;
 }
-.dashboard-container button{
+
+.dashboard-container button {
     background-color: #eeeeee;
     width: 8rem;
     height: 3rem;
     cursor: pointer;
     outline: none;
     position: absolute;
-    bottom:0;
+    bottom: 0;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.9);
     color: burlywood;
