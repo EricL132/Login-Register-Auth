@@ -1,0 +1,48 @@
+.resetpass-container{
+    background-image: url('../../back.jpg');
+    min-height: 100vh;
+    background-position: fixed;
+    background-size :cover;
+    background-position-x: center;
+    background-position-y: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    
+}
+
+.resetpass-container .resetpass-inner{
+    width: 500px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.resetpass-container button{
+    width: 8rem;
+    height: 3rem;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    bottom:0;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: burlywood;
+}
+
+
+.resetpass-container #error-message{
+    color: #fd5c63;
+    width: 100%;
+    text-align: center;
+}
+
+.resetpass-container .resetpass-container h1{
+    color: white;
+    align-self: center;
+margin-top: 7rem;
+}
