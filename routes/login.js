@@ -47,7 +47,7 @@ router.post('/register', async (req, res) => {
 
         await transporter.sendMail({
             from: `"Eric" <${process.env.gmailUser}>`,
-            to: "ericliao132@gmail.com",
+            to: reqEmail,
             subject: "Verification email from Eric's porfolio",
             text: "Hi,\n" + "Link will expire in 24 hours\nPlease click verfication link below to verify:\n" + `http://${req.headers.host}/user/confirm/?token=${token.token}`, // plain text body
         });
