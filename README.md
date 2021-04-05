@@ -1,1 +1,1 @@
-# Login-Register-Auth
+# Authentication with JSON Web Tokens
